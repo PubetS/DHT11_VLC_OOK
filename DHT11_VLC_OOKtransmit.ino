@@ -8,16 +8,16 @@
 DHT dht(DHTPIN, DHTTYPE);
 
 #define DELAY 15
-#define LED 10 //Output pin where LED is connected
-#define ID 129 //ID of Receiver
+#define LED 10 //Output pin where LED transmitter is connected
+#define ID 129 //ID code of Receiver
 #define BITLENGTH 8 //1 Byte
 #define FIRSTBIT pow(2,(BITLENGTH-1))//MSB Value
 #define TRUE 1
-#define TEMPERATURE A0
+//#define TEMPERATURE A0
 float temp_data, humid_data;
 int count=0;
 long Timer = millis();
-float voltage;
+//float voltage;
 void writeByte(int);
 int counter=0;
 
